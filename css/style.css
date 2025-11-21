@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+/* Animated element */
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+    border-radius: 10px;
+
+    animation: moveBox 2s infinite alternate ease-in-out;
+}
+
+/* Keyframes */
+@keyframes moveBox {
+    0% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+    100% {
+        transform: translateX(200px);
+        background-color: #e74c3c;
+    }
+}
